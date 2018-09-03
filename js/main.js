@@ -1,9 +1,29 @@
    $(document).ready(function() {
-      $("#mmenu").mmenu({
-         navbar: {
-            title: "DOLOTEX"
-         }
-      });
+        $("#mmenu").mmenu({
+            navbar: {
+                title: "Y&B"
+            }
+        });
+
+        $(window).resize(function() {
+            resizeMenu()
+        });
+
+        function resizeMenu(){
+            var c = $('.main_menu li').length;
+            var w = $('.main_menu').width();
+            var d = 0;
+            $('.main_menu li').each(function(index, el) {
+                d += $(this).width();
+            });
+            var r = (w - d)/(c-1);
+            $('.main_menu li').each(function(index, el) {
+                $(this).css({'margin-right' : r});
+            });
+            $('.main_menu li:last-child').css({'margin-right' : '0px'});
+        }
+
+        resizeMenu();
 
       $('.obj_item').click(function(){
          $('.object_check_tab').hide();

@@ -1,76 +1,51 @@
+@media (max-width: 1200px){
+    .phone_humber{
+        font-size: 18px;
+    }
+}
+
 @media (max-width: 991px){
-    .main_menu{
-        display: none;
+
+    .phone_humber{
+        font-size: 28px;
     }
 
     .logo{
         text-align: center;
     }
 
+    .header_top nav{
+        display: none;
+    }
+
     .hamburger_wraper{
         display: inline-block;
     }
 
-    header{
-        padding-bottom: 55px;
+    .description{
+        text-align: center;
+        font-size: 24px;
+        margin: 20px 0 0 0;
     }
 
-    .main_bottom_img{
+    .login{
         display: none;
     }
 
-    #main h1{
+    .login_w{
+        display: block;
+    }
+
+    .phone{
+        float: none;
         text-align: center;
+        background: none;
+        margin: 25px 0 25px 0;
+        padding: 0;
     }
 
-    .obj_check_item_img{
-        width: 100%
-    }
-
-    .obj_check_item_content{
-        width: 100%;
-        padding: 40px;
-    }
-
-    #sale{
-        background-size: cover;
-    }   
-
-    #bonus{
-        background-size: cover;
-    }
-
-    .sale_text ul{
-        margin-bottom: 55px;
-    }
-
-    .article_phone_text .phone, .article_phone_text .number_phone, .article_phone_text .pnone_text{
-        text-align: center;
-    }
-
-    #product_answ{
-        background-size: cover;
-    }
-
-    #dilers{
-        text-align: center;
-    }
-
-    .dilers_img{
-        display: none;
-    }
-
-    #map{
-        margin-bottom: 50px;
-    }
-
-    #cargo img{
-        left: 50%;
-        margin-left: -300px;
-    }
-
-    .cargo_img{
-        min-height: 374px;
+    .call_back a{
+        font-size: 20px;
     }
 }
 
