@@ -6,24 +6,40 @@
         });
 
         $(window).resize(function() {
-            resizeMenu()
+            resizeMenuHeader();
+            resizeMenuFooter();
         });
 
-        function resizeMenu(){
-            var c = $('.main_menu li').length;
-            var w = $('.main_menu').width();
+        function resizeMenuHeader(){
+            var c = $('header .main_menu li').length;
+            var w = $('header .main_menu').width();
             var d = 0;
-            $('.main_menu li').each(function(index, el) {
+            $('header .main_menu li').each(function(index, el) {
                 d += $(this).width();
             });
             var r = (w - d)/(c-1);
-            $('.main_menu li').each(function(index, el) {
+            $('header .main_menu li').each(function(index, el) {
                 $(this).css({'margin-right' : r});
             });
-            $('.main_menu li:last-child').css({'margin-right' : '0px'});
+            $('header .main_menu li:last-child').css({'margin-right' : '0px'});
         }
 
-        resizeMenu();
+        function resizeMenuFooter(){
+            var c = $('footer .main_menu li').length;
+            var w = $('footer .main_menu').width();
+            var d = 0;
+            $('footer .main_menu li').each(function(index, el) {
+                d += $(this).width();
+            });
+            var r = (w - d)/(c-1);
+            $('footer .main_menu li').each(function(index, el) {
+                $(this).css({'margin-right' : r});
+            });
+            $('footer .main_menu li:last-child').css({'margin-right' : '0px'});
+        }
+
+        resizeMenuHeader();
+        resizeMenuFooter();
 
         $('.qws_item_show').on('click', function(e){
             e.preventDefault();
@@ -61,84 +77,65 @@
 
       $('[name="phone"]').inputmask("+380 (99) 99 99 999");
 
-      $(".home_otziv_slider_wrap").owlCarousel({
-          loop:true,
-          margin: 30,
-          responsive:{
-              0:{
-                  items:1,
-                  nav:false
-              },
-              500:{
-               items:1,
-               nav:false
-              },
-              767:{
-                  items:2,
-                  nav:false
-              },
-              992:{
-                  items:2,
-                  nav:false
-              }
-          },
-          autoplay: true,
-          autoplayTimeout: 5000,
-          dots: true
-      });       
+        $(".home_otziv_slider_wrap").owlCarousel({
+            loop:true,
+            margin: 30,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:false
+                },
+                500:{
+                    items:1,
+                    nav:false
+                },
+                767:{
+                    items:2,
+                    nav:false
+                },
+                992:{
+                    items:2,
+                    nav:false
+                }
+            },
+            autoplay: true,
+            autoplayTimeout: 5000,
+            dots: true
+        });
 
-      $(".product_more_slider_wrap").owlCarousel({
-          loop:true,
-          margin: 30,
-          responsive:{
-              0:{
-                  items:1,
-                  nav:true
-              },
-              500:{
-               items:2,
-               nav:true
-              },
-              767:{
-                  items:4,
-                  nav:true
-              },
-              992:{
-                  items:4,
-                  nav:true
-              }
-          },
-          navText: ['<i class="fas fa-angle-left"></i>','<i class="fas fa-angle-right"></i>'],
-          autoplay: true,
-          autoplayTimeout: 5000
-      });      
+        $(".partners_slider").owlCarousel({
+            loop:true,
+            margin: 30,
+            responsive:{
+                0:{
+                    items:1,
+                },
+                500:{
+                    items:1,
+                },
+                767:{
+                    items:3,
+                },
+                992:{
+                    items:5,
+                    nav:true
+                }
+            },
+            navText: ['<div class="partners_slider_left"></div>','<div class="partners_slider_right"></div>'],
+            autoplay: true,
+            autoplayTimeout: 5000,
+            dots: false
+        });
 
-      $(".com_slider").owlCarousel({
-          loop:true,
-          margin: 30,
-          responsive:{
-              0:{
-                  items:1,
-                  nav:true
-              },
-              500:{
-                  items:1,
-                  nav:true
-              },
-              767:{
-                  items:2,
-                  nav:true
-              },
-              992:{
-                  items:2,
-                  nav:true
-              }
-          },
-          navText: ['<i class="fas fa-angle-left"></i>','<i class="fas fa-angle-right"></i>']
-      });
+    $("a[href*='#']").bind("click", function(e){
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+        }, 500);
+        e.preventDefault();
+        return false;
+    });
 
-      $('[data-fancybox]').fancybox();
-      $('[data-fancybox-video]').fancybox();
 
       var api = $("#mmenu").data( "mmenu" );
       api.bind('open:finish', function() {
@@ -147,39 +144,4 @@
          $('.hamburger').removeClass('is-active');
       });
 
-        ymaps.ready(init);
-         
-        function init () {
-            var myMap = new ymaps.Map("map", {
-                // Центр карты, указываем коордианты
-                center:[54.930181, 83.129441],
-                // Масштаб, тут все просто
-                zoom: 16,
-            }); 
-                     
-            var myGeoObjects = [];
-             
-            // Наша метка, указываем коордианты
-            myGeoObjects = new ymaps.Placemark([54.930181, 83.129441],{
-                            balloonContentBody: 'Текст в балуне',
-                            },{
-                            iconLayout: 'default#image',
-                            // Путь до нашей картинки
-                            iconImageHref: 'img/logo_map.png', 
-                            // Размер по ширине и высоте
-                            iconImageSize: [102, 22],
-                            // Смещение левого верхнего угла иконки относительно
-                            // её «ножки» (точки привязки).
-                            iconImageOffset: [-35, -35]
-            });
-                         
-            var clusterer = new ymaps.Clusterer({
-                clusterDisableClickZoom: false,
-                clusterOpenBalloonOnClick: false,
-            });
-             
-            clusterer.add(myGeoObjects);
-            myMap.geoObjects.add(clusterer);
-         
-        }
    });

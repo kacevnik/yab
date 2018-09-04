@@ -59,6 +59,14 @@
     .qws_item_title{
         font-size: 18px;
     }
+
+    .orm_section_info{
+        text-align: center;
+    }
+
+    .footer_social{
+        display: none;
+    }
 }
 
 
@@ -91,6 +99,28 @@
         margin-right: -15px;
         margin-left: -15px;
     }
+
+    #home_5 h2{
+        text-align: center;
+        float: none;
+        background: none;
+        margin-bottom: 35px;
+        padding: 0;
+        font-size: 36px;
+    }
+
+    #home_5{
+        text-align: center;
+    }
+
+    #home_5 .btn_yab{
+        float: none;
+        margin-bottom: 50px;
+    }
+
+    #home_5 .home_otziv_slider_wrap{
+        text-align: left;
+    }
 }
 
 @media (max-width: 500px){
@@ -102,6 +132,8 @@
     .main_sub_title{
         font-size: 20px;
     }
+
+
 
 }
 
