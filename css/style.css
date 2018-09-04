@@ -553,6 +553,62 @@ button.owl-dot:last-child{
     margin-right: 0;
 }
 
+#home_6{
+    background: #ffffff;
+    padding: 80px 0;
+}
+
+#home_6 h2{
+    text-align: left;
+    padding: 0 15px 60px 15px;
+}
+
+.home_6_element{
+    width: 50%;
+    float: left;
+}
+
+.home_6_item{
+    background: #ffffff;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 0px 38px 6px rgba(101, 101, 101, 0.48);
+    -o-box-shadow: 0px 0px 38px 6px rgba(101, 101, 101, 0.48);
+    -moz-box-shadow: 0px 0px 38px 6px rgba(101, 101, 101, 0.48);
+    -webkit-box-shadow: 0px 0px 38px 6px rgba(190, 190, 190, 0.48);
+    padding: 40px 64px;
+    margin-bottom: 30px;
+}
+
+.home_6_item img{
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.home_6_item_title{
+    font-size: 18px;
+}
+
+#home_6 .btn_yab{
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.home_6_row{
+    margin-right: -50px;
+    margin-left: -50px;
+}
+
+.home_6_col{
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+#home_6 p{
+    margin: 0 0 30px;
+}
+
 
 
 
