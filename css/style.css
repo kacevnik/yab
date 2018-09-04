@@ -30,6 +30,13 @@ body{
     background: #ffffff;
 }
 
+h2{
+    text-align: center;
+    font-size: 24px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
 
 .font_100{
     font-family: "Gotham_100";
@@ -251,14 +258,14 @@ header{
     margin-right: 30px;
 }
 
-.main_button .btn_yab_transp{
+.btn_yab_transp{
     background: transparent;
     border-color: rgba(255, 92, 157, 1.0);
     border-width: 3px;
     border-style: solid;
 }
 
-.main_button .btn_yab_transp:hover{
+.btn_yab_transp:hover{
     background: rgba(255, 92, 157, 0.19);
 }
 
@@ -281,10 +288,6 @@ header{
 }
 
 #block_2 h2{
-    text-align: center;
-    font-size: 24px;
-    margin: 0;
-    text-transform: uppercase;
     margin-bottom: 65px;
 }
 
@@ -298,3 +301,75 @@ header{
     font-family: 'Gotham_500';
     margin: 30px 20px;
 }
+
+#home_3{
+    position: relative;
+    background: #f4f8fb;
+    background-image: url(../img/home_3_bg.png);
+    padding: 73px 0;
+}
+
+#home_3 h2{
+    margin-bottom: 70px;
+}
+
+#home_3 .row{
+    margin-right: -34px;
+    margin-left: -34px;
+}
+
+#home_3 .col-md-4{
+    padding-right: 34px;
+    padding-left: 34px;
+}
+
+.home_3_item{
+    background: #ffffff;
+    border-radius: 20px;
+    -o-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    min-height: 607px;
+}
+
+.home_3_item img{
+    width: 100%;
+}
+
+.home_3_item_content{
+    position: relative;
+    padding: 45px 30px 0 30px;
+}
+
+.home_3_item_content .btn_yab{
+    width: 280px;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    margin-left: -140px;
+}
+
+.home_3_item_content p{
+    margin: 0;
+    margin-bottom: 35px;
+}
+
+.home_3_bottom_link{
+    text-align: center;
+}
+
+.home_3_bottom_link .btn_yab_transp{
+    height: 50px;
+    line-height: 50px;
+    width: 355px;
+    color: #333333;
+}
+
+
+
+
+

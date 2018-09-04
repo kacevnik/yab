@@ -47,6 +47,10 @@
     .call_back a{
         font-size: 20px;
     }
+
+    #home_3 h2 {
+        font-size: 34px
+    }
 }
 
 
@@ -73,6 +77,11 @@
         line-height: 70px;
         font-size: 22px;
         margin-bottom: 30px;
+    }
+
+    #home_3 .row {
+        margin-right: -15px;
+        margin-left: -15px;
     }
 }
 
