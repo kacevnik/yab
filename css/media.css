@@ -2,6 +2,10 @@
     .phone_humber{
         font-size: 18px;
     }
+
+    .qws_item_title{
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 991px){
@@ -50,6 +54,10 @@
 
     #home_3 h2 {
         font-size: 34px
+    }
+
+    .qws_item_title{
+        font-size: 18px;
     }
 }
 

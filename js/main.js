@@ -25,6 +25,22 @@
 
         resizeMenu();
 
+        $('.qws_item_show').on('click', function(e){
+            e.preventDefault();
+            if($(this).attr('data-show') == '0'){
+                $('.qws_item_show').attr('data-show', 0);
+                $(this).attr('data-show', 1);
+                $('.qws_item_show_body').slideUp(400);
+                $(this).next('div').slideDown(400);
+                $('.qws_item_show').removeClass('qws_s');
+                $(this).addClass('qws_s');
+            }else{
+                $('.qws_item_show').attr('data-show', 0);
+                $('.qws_item_show').removeClass('qws_s');
+                $('.qws_item_show_body').slideUp(400);
+            }
+        });
+
       $('.obj_item').click(function(){
          $('.object_check_tab').hide();
          $('.obj_item').removeClass('active');
@@ -45,30 +61,30 @@
 
       $('[name="phone"]').inputmask("+380 (99) 99 99 999");
 
-      $(".client_slider").owlCarousel({
+      $(".home_otziv_slider_wrap").owlCarousel({
           loop:true,
           margin: 30,
           responsive:{
               0:{
                   items:1,
-                  nav:true
+                  nav:false
               },
               500:{
-               items:2,
-               nav:true
+               items:1,
+               nav:false
               },
               767:{
-                  items:3,
-                  nav:true
+                  items:2,
+                  nav:false
               },
               992:{
-                  items:4,
-                  nav:true
+                  items:2,
+                  nav:false
               }
           },
-          navText: ['<i class="fas fa-angle-left"></i>','<i class="fas fa-angle-right"></i>'],
           autoplay: true,
-          autoplayTimeout: 5000
+          autoplayTimeout: 5000,
+          dots: true
       });       
 
       $(".product_more_slider_wrap").owlCarousel({

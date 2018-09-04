@@ -318,7 +318,7 @@ header{
     margin-left: -34px;
 }
 
-#home_3 .col-md-4{
+#home_3 .col-lg-4{
     padding-right: 34px;
     padding-left: 34px;
 }
@@ -331,7 +331,11 @@ header{
     -webkit-border-radius: 20px;
     overflow: hidden;
     margin-bottom: 40px;
-    min-height: 607px;
+    min-height: 619px;
+    box-shadow: 0px 0px 20px 6px rgba(134, 134, 134, 0.08)
+    -o-box-shadow: 0px 0px 20px 6px rgba(134, 134, 134, 0.08)
+    -moz-box-shadow: 0px 0px 20px 6px rgba(134, 134, 134, 0.08)
+    -webkit-box-shadow: 0px 0px 20px 6px rgba(134, 134, 134, 0.08)
 }
 
 .home_3_item img{
@@ -368,6 +372,187 @@ header{
     width: 355px;
     color: #333333;
 }
+
+#qws{
+    background: #ffffff;
+    padding: 80px 0;
+}
+
+#qws h2{
+    margin-bottom: 65px;
+}
+
+.qws_item{
+    overflow: hidden;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0px 0px 38px 6px rgba(101, 101, 101, 0.47843137254901963);
+    -o-box-shadow: 0px 0px 38px 6px rgba(101, 101, 101, 0.47843137254901963);
+    -moz-box-shadow: 0px 0px 38px 6px rgba(101, 101, 101, 0.47843137254901963);
+    -webkit-box-shadow: 0px 0px 38px 6px rgba(190, 190, 190, 0.47843137254901963);
+    border-radius: 15px;
+    -o-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    min-height: 60px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.qws_item_num{
+    font-size: 30px;
+    float: left;
+    line-height: 60px;
+    padding: 0 20px;
+    font-family: 'Gotham_500';
+    color: #e9579b;
+}
+
+.qws_item_title{
+    float: left;
+    line-height: 60px;
+    font-size: 18px;
+    font-family: 'Gotham_500';
+}
+
+.qws_item_show{
+    height: 15px;
+    width: 20px;
+    background: url(../img/arrow_qws.png)no-repeat;
+    display: block;
+    float: right;
+    position: absolute;
+    right: 15px;
+    top: 22px;
+}
+
+.qws_item_show_body{
+    width: 100%;
+    margin-top: 60px;
+    padding: 25px;
+    display: none;
+}
+
+.qws_s{
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+#home_5{
+    position: relative;
+    background: url(../img/home_5_bg.png)no-repeat center center;
+    background-size: cover;
+    padding: 70px 0;
+}
+
+#home_5 h2{
+    float: left;
+    color: #ffffff;
+    background: url(../img/home_5_h2_bg.png)no-repeat;
+    padding-left: 85px;
+    line-height: 64px;
+    margin-bottom: 55px;
+}
+
+#home_5 .btn_yab{
+    float: right;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.home_otziv_slider_wrap{
+    overflow: hidden;
+}
+
+.otziv_item{
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    font-family: 'Gotham_100';
+}
+
+.otziv_name{
+    font-size: 18px;
+    font-family: 'Gotham_500';
+}
+
+.otziv_date{
+    font-size: 14px;
+    color: #9fa4af;
+    padding: 25px 0 30px 0;
+    position: relative;
+}
+
+.otziv_date:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: rgba(255, 92, 157, 1.0);
+    background: -webkit-linear-gradient(right, rgba(255, 92, 157, 1.0), rgba(250, 165, 103, 1.0));
+    background: -moz-linear-gradient(right, rgba(255, 92, 157, 1.0), rgba(250, 165, 103, 1.0));
+    background: linear-gradient(to left, rgba(255, 92, 157, 1.0), rgba(250, 165, 103, 1.0));
+}
+
+.otziv_content{
+    margin: 30px 0;
+}
+
+.otziv_more{
+    display: block;
+    line-height: 2px;
+    color: #9fa4af;
+    background: url(../img/home_5_more_bg.png)no-repeat left center;
+    padding: 0 0 0 20px;
+    height: 15px;
+    line-height: 18px;
+    font-size: 14px;
+}
+
+.otziv_more:hover{
+    color: #9fa4af;
+    text-decoration: none;
+}
+
+#home_5 .owl-dots{
+    padding: 50px 0 0 0;
+}
+
+.owl-dots{
+    text-align: center;
+}
+
+.owl-carousel button.owl-dot{
+    width: 10px;
+    height: 10px;
+    background: #ffffff;
+    border-radius: 50%;
+    -o-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    margin-right: 10px;
+}
+
+.owl-carousel button.owl-dot:active, .owl-carousel button.owl-dot:focus{
+    outline: none;
+}
+
+button.owl-dot.active{
+    background: -webkit-linear-gradient(right, rgba(255, 92, 157, 1.0), rgba(250, 165, 103, 1.0));
+    background: -moz-linear-gradient(right, rgba(255, 92, 157, 1.0), rgba(250, 165, 103, 1.0));
+    background: linear-gradient(to left, rgba(255, 92, 157, 1.0), rgba(250, 165, 103, 1.0));
+}
+
+button.owl-dot:last-child{
+    margin-right: 0;
+}
+
 
 
 
