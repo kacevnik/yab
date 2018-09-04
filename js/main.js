@@ -40,6 +40,8 @@
 
         resizeMenuHeader();
         resizeMenuFooter();
+        setTimeout(resizeMenuHeader(), 1000);
+        setTimeout(resizeMenuFooter(), 1000);
 
         $('.qws_item_show').on('click', function(e){
             e.preventDefault();
