@@ -6,6 +6,10 @@
     .qws_item_title{
         font-size: 15px;
     }
+
+    ..blog_item{
+        max-height: 410px;
+    }
 }
 
 @media (max-width: 991px){
