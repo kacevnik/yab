@@ -8,6 +8,7 @@
         $(window).resize(function() {
             resizeMenuHeader();
             resizeMenuFooter();
+            midHeight('.block_2_item');
         });
 
         function resizeMenuHeader(){
@@ -37,6 +38,20 @@
             });
             $('footer .main_menu li:last-child').css({'margin-right' : '0px'});
         }
+
+        function midHeight(elem){
+            var h = 0;
+            $(elem).each(function(index, el) {
+                if($(this).height() > h){
+                    h = $(this).height();
+                }
+
+            });
+            $(elem).height(0);
+            $(elem).height(h);
+        }
+
+        midHeight('.block_2_item');
 
         resizeMenuHeader();
         resizeMenuFooter();
